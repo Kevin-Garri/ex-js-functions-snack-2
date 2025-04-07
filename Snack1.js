@@ -19,3 +19,20 @@ const somma = (num1, num2) => num1 + num2;
 Definisci una funzione chiamata quadrato che accetta un numero e restituisce il suo quadrato in una sola riga.
 */
 const quadrato = numero => numero * numero;
+
+/*Snack 3 Crea una funzione eseguiOperazione
+Definisci una funzione eseguiOperazione che accetta tre parametri: due numeri e una funzione operatore (callback). La funzione deve eseguire l'operazione fornita sui due numeri.
+*/
+
+function eseguiOperazione(num1, num2, operatore) {
+  return operatore(num1, num2);
+}
+
+//const somma = (num1, num2) => num1 + num2;
+//const prodotto = (num1, num2) => num1 * num2;
+
+/* Snack 4 Crea un generatore di funzioni creaTimer
+Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
+*/
+
+
