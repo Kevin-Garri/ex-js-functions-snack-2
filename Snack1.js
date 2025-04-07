@@ -34,5 +34,13 @@ function eseguiOperazione(num1, num2, operatore) {
 /* Snack 4 Crea un generatore di funzioni creaTimer
 Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
 */
+function creaTimer(tempo) {
+  return () => {
+    setTimeout(() => {
+      console.log("Tempo scaduto!");
+    }, tempo)
+  }
+}
+const timer = creaTimer(4000);
 
 
